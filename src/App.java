@@ -1,5 +1,8 @@
 import java.util.*;
 
+import creature.Creature;
+import creature.Duck;
+
 public class App {
 	private static ArrayList<Creature> menagerie;
 	
@@ -11,7 +14,9 @@ public class App {
 		menagerie.add(d);
 		
 		for (Creature c: menagerie) {
-			c.performFly();
+			for (int i = 0; i < 10; i++) {
+				c.performFly();
+			}
 			c.performSpeech();
 		}
 	}
