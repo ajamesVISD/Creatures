@@ -8,4 +8,8 @@ public class Quacking implements SpeechBehavior {
 		System.out.println("Quack quack quack, " + c.getCatchphrase());
 	}
 
+	@Override
+	public void ChangeCatchphrase(Creature c, String s) {
+		c.setCatchphrase(s);
+	}
 }

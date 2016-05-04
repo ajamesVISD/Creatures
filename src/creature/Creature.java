@@ -3,7 +3,7 @@ import speech.*;
 import flight.*;
 
 public abstract class Creature {
-	private SpeechBehavior speech;
+	private SpeechBehavior speechBehavior;
 	private FlightBehavior flightBehavior;
 	
 	private int hoursFlown;
@@ -62,7 +62,7 @@ public abstract class Creature {
 	}
 
 	public void SetSpeechBehavior(SpeechBehavior s) {
-		speech = s;
+		speechBehavior = s;
 	}
 	
 	public void SetFlightBehavior(FlightBehavior s) {
@@ -83,6 +83,10 @@ public abstract class Creature {
 	}
 	
 	public void performSpeech() {
-		speech.Speak(this);
+		speechBehavior.Speak(this);
+	}
+	
+	public void changeCatchphrase(String s) {
+		speechBehavior.ChangeCatchphrase(this, s);
 	}
 }
