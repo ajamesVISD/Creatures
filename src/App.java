@@ -1,7 +1,7 @@
 import java.util.*;
 
 import creature.Creature;
-import creature.Duck;
+import creature.*;
 
 public class App {
 	private static ArrayList<Creature> menagerie;
@@ -10,8 +10,8 @@ public class App {
 		
 		menagerie = new ArrayList<Creature>();
 		
-		Creature d = new Duck();
-		menagerie.add(d);
+		menagerie.add(new Duck());
+		menagerie.add(new Eagle());
 		
 		for (Creature c: menagerie) {
 			c.performFly(3);
@@ -19,6 +19,8 @@ public class App {
 			c.performFly(3);
 			c.performSpeech();
 			c.changeCatchphrase("I have a new catchprhase now!");
+			c.performSpeech();
+			System.out.println("");
 			}
 		}
 	}

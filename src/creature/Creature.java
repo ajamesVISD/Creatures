@@ -15,10 +15,10 @@ public abstract class Creature {
 	
 	/**
 	 * 
-	 * @param flight -- an instance of a FlightBehavior for the Creature
-	 * @param maxHoursFlown -- the maximum number of hours the creature can fly.
-	 * @param flightSpeed -- the speed of the creature when flying
-	 * @param catchphrase -- the creature's favorite catchphrase.
+	 * @param speech - the speech behavior for this Creature.
+	 * @param flight - the flying behavior for this Creature.
+	 * @param maxHoursFlown - the maximum number of hours it can fly before becoming tired.
+	 * @param catchphrase - the creature's catchphrase.
 	 */
 	public Creature(SpeechBehavior speech, FlightBehavior flight, int maxHoursFlown, String catchphrase) {
 		super();
