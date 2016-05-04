@@ -14,14 +14,12 @@ public class App {
 		menagerie.add(d);
 		
 		for (Creature c: menagerie) {
-			for (int i = 0; i < 10; i++) {
-				c.performFly();
-				c.performSpeech();
-				if (i % 2 == 0) {
-					c.changeCatchphrase("I am the number " + Integer.toString(i) + " duck!");
-				}
+			c.performFly(3);
+			c.performFly(3);
+			c.performFly(3);
+			c.performSpeech();
+			c.changeCatchphrase("I have a new catchprhase now!");
 			}
 		}
 	}
 
-}

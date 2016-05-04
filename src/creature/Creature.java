@@ -73,8 +73,8 @@ public abstract class Creature {
 		
 	};
 	
-	public void performFly() {
-		flightBehavior.Fly(this);
+	public void performFly(int hours) {
+		flightBehavior.Fly(this, hours);
 	}
 	
 	public void addToHoursFlown(int n) {
